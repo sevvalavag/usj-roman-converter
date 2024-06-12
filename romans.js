@@ -36,20 +36,7 @@ function init() {
       alert(convertion.message);
     }
   });
-convertButton.addEventListener('click', function() {
-    var inputValue = inputArea.value;
-    var convertion = modeCheckbox.checked ? convertIntegerToRoman(inputValue) : convertRomanToInteger(inputValue);
-    if (convertion.result) {
-      outputArea.innerHTML = convertion.value;
-      gtag('event', 'conversion', {
-        'event_category': 'Roman to Integer',
-        'event_label': inputValue,
-        'value': convertion.value
-      });
-    } else {
-      alert(convertion.message);
-    }
-  });
+
 }
 
 // Now the convertion methods receive both an input argument instead
@@ -274,6 +261,6 @@ if (!String.prototype.repeat) {
     }
     // Could we try:
     // return Array(count + 1).join(this);
-    return rpt;
-  };
+    return rpt;
+  };
 }
