@@ -261,6 +261,6 @@ if (!String.prototype.repeat) {
     }
     // Could we try:
     // return Array(count + 1).join(this);
-    return rpt;
-  };
+    return rpt;
+  };
 }
